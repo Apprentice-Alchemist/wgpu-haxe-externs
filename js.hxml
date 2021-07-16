@@ -1,0 +1,4 @@
+-cp src
+wgpu
+-js out.js
+--no-output
