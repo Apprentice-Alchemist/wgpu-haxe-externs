@@ -15,5 +15,5 @@ typedef GPUBufferBindingLayout = {
 		May be used to indicate the minimum buffer binding size.
 	**/
 	@:optional
-	var minBindingSize : Float;
+	var minBindingSize : Int; //Float;
 };

@@ -6,13 +6,13 @@ typedef GPUBindGroupLayoutEntry = {
 		{@link GPUBindGroupLayoutEntry}, a corresponding {@link GPUBindGroupEntry},
 		and the {@link GPUShaderModule}s.
 	**/
-	var binding : Float;
+	var binding : Int;
 	/**
 		A bitset of the members of {@link GPUShaderStage}.
 		Each set bit indicates that a {@link GPUBindGroupLayoutEntry}'s resource
 		will be accessible from the associated shader stage.
 	**/
-	var visibility : Float;
+	var visibility : Int;
 	/**
 		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
 		is {@link GPUBufferBinding}.

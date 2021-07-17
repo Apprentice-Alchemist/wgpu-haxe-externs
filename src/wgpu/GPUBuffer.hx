@@ -7,11 +7,11 @@ package wgpu;
 		Maps the given range of the {@link GPUBuffer} and resolves the returned {@link Promise} when the
 		{@link GPUBuffer}'s content is ready to be accessed with {@link GPUBuffer#getMappedRange}.
 	**/
-	function mapAsync(mode:Float, ?offset:Float, ?size:Float):js.lib.Promise<Null<Any>>;
+	function mapAsync(mode:GPUMapMode, ?offset:Int, ?size:Int):js.lib.Promise<Null<Any>>;
 	/**
 		Returns a {@link ArrayBuffer} with the contents of the {@link GPUBuffer} in the given mapped range.
 	**/
-	function getMappedRange(?offset:Float, ?size:Float):js.lib.ArrayBuffer;
+	function getMappedRange(?offset:Int, ?size:Int):js.lib.ArrayBuffer;
 	/**
 		Unmaps the mapped range of the {@link GPUBuffer} and makes it's contents available for use by the
 		GPU again.

@@ -1,9 +1,9 @@
 package wgpu;
 
 typedef GPUExtent3DDict = {
-	var width : Float;
+	var width:Int;
 	@:optional
-	var height : Float;
+	var height:Int;
 	@:optional
-	var depthOrArrayLayers : Float;
+	var depthOrArrayLayers:Int;
 };

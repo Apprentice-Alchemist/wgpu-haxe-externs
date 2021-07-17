@@ -6,22 +6,25 @@ package wgpu;
 	/**
 		A human-readable string containing the message generated during the shader compilation.
 	**/
-	final message : String;
+	final message:String;
+
 	/**
 		The severity level of the message.
 	**/
-	final type : GPUCompilationMessageType;
+	final type:GPUCompilationMessageType;
+
 	/**
 		The line number in the shader {@link GPUShaderModuleDescriptor#code} the
 		{@link GPUCompilationMessage#message} corresponds to. Value is one-based, such that a lineNum of
 		`1` indicates the first line of the shader {@link GPUShaderModuleDescriptor#code}.
-		
+
 		If the {@link GPUCompilationMessage#message} corresponds to a substring this points to
 		the line on which the substring begins. Must be `0` if the {@link GPUCompilationMessage#message}
 		does not correspond to any specific point in the shader {@link GPUShaderModuleDescriptor#code}.
 		Issue: Reference WGSL spec when it [defines what a line is](https://gpuweb.github.io/gpuweb/wgsl/#comments).
 	**/
-	final lineNum : Float;
+	final lineNum:Int;
+
 	/**
 		The offset, in UTF-16 code units, from the beginning of line {@link GPUCompilationMessage#lineNum}
 		of the shader {@link GPUShaderModuleDescriptor#code} to the point or beginning of the substring
@@ -31,7 +34,8 @@ package wgpu;
 		first UTF-16 code unit of the substring. Must be `0` if the {@link GPUCompilationMessage#message}
 		does not correspond to any specific point in the shader {@link GPUShaderModuleDescriptor#code}.
 	**/
-	final linePos : Float;
+	final linePos:Int;
+
 	/**
 		The offset from the beginning of the shader {@link GPUShaderModuleDescriptor#code} in UTF-16
 		code units to the point or beginning of the substring that {@link GPUCompilationMessage#message}
@@ -39,12 +43,12 @@ package wgpu;
 		{@link GPUCompilationMessage#linePos}. Must be `0` if the {@link GPUCompilationMessage#message}
 		does not correspond to any specific point in the shader {@link GPUShaderModuleDescriptor#code}.
 	**/
-	final offset : Float;
+	final offset:Int;
+
 	/**
 		The number of UTF-16 code units in the substring that {@link GPUCompilationMessage#message}
 		corresponds to. If the message does not correspond with a substring then
 		{@link GPUCompilationMessage#length} must be 0.
 	**/
-	final length : Float;
-	
+	final length:Int;
 }

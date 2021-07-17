@@ -16,7 +16,7 @@ package wgpu;
 	/**
 		Issues a write operation of the provided data into a {@link GPUBuffer}.
 	**/
-	function writeBuffer(buffer:GPUBuffer, bufferOffset:Float, data:Dynamic, ?dataOffset:Float, ?size:Float):Null<Any>;
+	function writeBuffer(buffer:GPUBuffer, bufferOffset:Int, data:Dynamic, ?dataOffset:Int, ?size:Int):Null<Any>;
 	/**
 		Issues a write operation of the provided data into a {@link GPUTexture}.
 	**/

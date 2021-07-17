@@ -1,8 +1,8 @@
 package wgpu;
 
 typedef GPUVertexBufferLayout = {
-	var arrayStride : Float;
+	var arrayStride:Int;
 	@:optional
-	var stepMode : GPUInputStepMode;
-	var attributes : Iterable<GPUVertexAttribute>;
+	var stepMode:GPUInputStepMode;
+	var attributes:Iterable<GPUVertexAttribute>;
 };

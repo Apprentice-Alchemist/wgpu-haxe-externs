@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUIntegerCoordinate = Float;
+typedef GPUIntegerCoordinate = Int; //Float;

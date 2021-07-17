@@ -1,8 +1,8 @@
 package wgpu;
 
 typedef GPUBufferDescriptor = {
-	var size : Float;
-	var usage : Float;
+	var size : Int;
+	var usage : GPUBufferUsageFlags;
 	@:optional
 	var mappedAtCreation : Bool;
 	/**

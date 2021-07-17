@@ -8,7 +8,7 @@ typedef GPUQuerySetDescriptor = {
 	/**
 		The number of queries managed by {@link GPUQuerySet}.
 	**/
-	var count : Float;
+	var count : Int;
 	/**
 		The set of {@link GPUPipelineStatisticName} values in this sequence defines which pipeline statistics will be returned in the new query set.
 	**/

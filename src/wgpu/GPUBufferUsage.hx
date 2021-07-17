@@ -1,14 +1,15 @@
 package wgpu;
 
-@:native("GPUBufferUsage") extern class GPUBufferUsage {
-	final MAP_READ : Float;
-	final MAP_WRITE : Float;
-	final COPY_SRC : Float;
-	final COPY_DST : Float;
-	final INDEX : Float;
-	final VERTEX : Float;
-	final UNIFORM : Float;
-	final STORAGE : Float;
-	final INDIRECT : Float;
-	final QUERY_RESOLVE : Float;
+@:native("GPUBufferUsage")
+extern class GPUBufferUsage {
+	static final MAP_READ:Float;
+	static final MAP_WRITE:Float;
+	static final COPY_SRC:Float;
+	static final COPY_DST:Float;
+	static final INDEX:Float;
+	static final VERTEX:Float;
+	static final UNIFORM:Float;
+	static final STORAGE:Float;
+	static final INDIRECT:Float;
+	static final QUERY_RESOLVE:Float;
 }
