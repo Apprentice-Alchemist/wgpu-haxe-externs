@@ -1,5 +1,0 @@
-package wgpu;
-
-typedef IGPUOutOfMemoryError = {
-
-};

@@ -2,7 +2,7 @@ package wgpu;
 
 typedef GPUBufferDescriptor = {
 	var size : Int;
-	var usage : GPUBufferUsageFlags;
+	var usage : GPUBufferUsage;
 	@:optional
 	var mappedAtCreation : Bool;
 	/**

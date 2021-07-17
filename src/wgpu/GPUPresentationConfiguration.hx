@@ -4,7 +4,7 @@ typedef GPUPresentationConfiguration = {
 	var device:GPUDevice;
 	var format:GPUTextureFormat;
 	@:optional
-	var usage:wgpu.GPUTextureUsageFlags;
+	var usage:wgpu.GPUTextureUsage;
 	@:optional
 	var compositingAlphaMode:GPUCanvasCompositingAlphaMode;
 	@:optional

@@ -1,9 +1,9 @@
 package wgpu;
 
-@:native("GPUTextureUsage") extern class GPUTextureUsage {
-	static final COPY_SRC:Float;
-	static final COPY_DST:Float;
-	static final SAMPLED:Float;
-	static final STORAGE:Float;
-	static final RENDER_ATTACHMENT:Float;
+enum abstract GPUTextureUsage(Int) {
+    final COPY_SRC          = 0x01;
+    final COPY_DST          = 0x02;
+    final SHADER_READ       = 0x04;
+    final STORAGE           = 0x08;
+    final RENDER_ATTACHMENT = 0x10;
 }

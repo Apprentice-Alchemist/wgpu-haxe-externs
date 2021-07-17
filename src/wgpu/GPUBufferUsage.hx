@@ -1,15 +1,15 @@
 package wgpu;
 
-@:native("GPUBufferUsage")
-extern class GPUBufferUsage {
-	static final MAP_READ:Float;
-	static final MAP_WRITE:Float;
-	static final COPY_SRC:Float;
-	static final COPY_DST:Float;
-	static final INDEX:Float;
-	static final VERTEX:Float;
-	static final UNIFORM:Float;
-	static final STORAGE:Float;
-	static final INDIRECT:Float;
-	static final QUERY_RESOLVE:Float;
+enum abstract GPUBufferUsage(Int) {
+	final MAP_READ = 0x0001;
+	final MAP_WRITE = 0x0002;
+	final COPY_SRC = 0x0004;
+	final COPY_DST = 0x0008;
+	final INDEX = 0x0010;
+	final VERTEX = 0x0020;
+	final UNIFORM = 0x0040;
+	final STORAGE = 0x0080;
+	final INDIRECT = 0x0100;
+	final QUERY_RESOLVE = 0x0200;
+	@:op(A | B) static function and(a:GPUBufferUsage, b:GPUBufferUsage):GPUBufferUsage;
 }
