@@ -11,6 +11,7 @@ package wgpu;
 		invocations of Update the rendering).
 	**/
 	function getCurrentTexture():GPUTexture;
+
 	/**
 		A label which can be used by development tools (such as error/warning messages,
 		browser developer tools, or platform debugging utilities) to identify the underlying
@@ -18,6 +19,5 @@ package wgpu;
 		It has no specified format, and therefore cannot be reliably machine-parsed.
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
-	var label : Null<String>;
-	
+	var label:Null<String>;
 }

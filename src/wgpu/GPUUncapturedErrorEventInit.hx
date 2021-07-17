@@ -1,11 +1,11 @@
 package wgpu;
 
 typedef GPUUncapturedErrorEventInit = {
-	var error : GPUError;
+	var error:GPUError;
 	@:optional
-	var bubbles : Bool;
+	var bubbles:Bool;
 	@:optional
-	var cancelable : Bool;
+	var cancelable:Bool;
 	@:optional
-	var composed : Bool;
+	var composed:Bool;
 };

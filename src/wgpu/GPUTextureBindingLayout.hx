@@ -5,7 +5,8 @@ typedef GPUTextureBindingLayout = {
 		Indicates the type required for texture views bound to this binding.
 	**/
 	@:optional
-	var sampleType : GPUTextureSampleType;
+	var sampleType:GPUTextureSampleType;
+
 	/**
 		Indicates the required {@link GPUTextureViewDescriptor#dimension} for texture views bound to
 		this binding.
@@ -14,10 +15,11 @@ typedef GPUTextureBindingLayout = {
 		`MTLArgumentBuffer` objects that are more efficient to bind at run-time.
 	**/
 	@:optional
-	var viewDimension : GPUTextureViewDimension;
+	var viewDimension:GPUTextureViewDimension;
+
 	/**
 		Inicates whether or not texture views bound to this binding must be multisampled.
 	**/
 	@:optional
-	var multisampled : Bool;
+	var multisampled:Bool;
 };

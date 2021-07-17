@@ -1,14 +1,15 @@
 package wgpu;
 
 typedef GPURenderBundleEncoderDescriptor = {
-	var colorFormats : Iterable<GPUTextureFormat>;
+	var colorFormats:Iterable<GPUTextureFormat>;
 	@:optional
-	var depthStencilFormat : GPUTextureFormat;
+	var depthStencilFormat:GPUTextureFormat;
 	@:optional
-	var sampleCount : Float;
+	var sampleCount:Float;
+
 	/**
 		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
 	**/
 	@:optional
-	var label : String;
+	var label:String;
 };

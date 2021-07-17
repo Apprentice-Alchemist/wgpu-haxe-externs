@@ -5,11 +5,13 @@ typedef GPUStorageTextureBindingLayout = {
 		Indicates whether texture views bound to this binding will be bound for read-only or
 		write-only access.
 	**/
-	var access : GPUStorageTextureAccess;
+	var access:GPUStorageTextureAccess;
+
 	/**
 		The required {@link GPUTextureViewDescriptor#format} of texture views bound to this binding.
 	**/
-	var format : GPUTextureFormat;
+	var format:GPUTextureFormat;
+
 	/**
 		Indicates the required {@link GPUTextureViewDescriptor#dimension} for texture views bound to
 		this binding.
@@ -18,5 +20,5 @@ typedef GPUStorageTextureBindingLayout = {
 		`MTLArgumentBuffer` objects that are more efficient to bind at run-time.
 	**/
 	@:optional
-	var viewDimension : GPUTextureViewDimension;
+	var viewDimension:GPUTextureViewDimension;
 };

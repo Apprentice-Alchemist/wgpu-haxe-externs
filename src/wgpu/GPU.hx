@@ -9,5 +9,4 @@ package wgpu;
 		chooses according to the provided options.
 	**/
 	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<Null<GPUAdapter>>;
-	
 }

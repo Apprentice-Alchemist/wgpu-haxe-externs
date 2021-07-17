@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUIndex32 = Int; //Float;
+typedef GPUIndex32 = Int; // Float;

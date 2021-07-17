@@ -1,23 +1,23 @@
 package wgpu;
 
 typedef GPUDepthStencilState = {
-	var format : GPUTextureFormat;
+	var format:GPUTextureFormat;
 	@:optional
-	var depthWriteEnabled : Bool;
+	var depthWriteEnabled:Bool;
 	@:optional
-	var depthCompare : GPUCompareFunction;
+	var depthCompare:GPUCompareFunction;
 	@:optional
-	var stencilFront : GPUStencilFaceState;
+	var stencilFront:GPUStencilFaceState;
 	@:optional
-	var stencilBack : GPUStencilFaceState;
+	var stencilBack:GPUStencilFaceState;
 	@:optional
-	var stencilReadMask : Float;
+	var stencilReadMask:Float;
 	@:optional
-	var stencilWriteMask : Float;
+	var stencilWriteMask:Float;
 	@:optional
-	var depthBias : Float;
+	var depthBias:Float;
 	@:optional
-	var depthBiasSlopeScale : Float;
+	var depthBiasSlopeScale:Float;
 	@:optional
-	var depthBiasClamp : Float;
+	var depthBiasClamp:Float;
 };

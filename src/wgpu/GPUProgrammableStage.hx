@@ -1,8 +1,8 @@
 package wgpu;
 
 typedef GPUProgrammableStage = {
-	var module : GPUShaderModule;
-	var entryPoint : String;
+	var module:GPUShaderModule;
+	var entryPoint:String;
 	@:optional
-	var constants : { };
+	var constants:{};
 };

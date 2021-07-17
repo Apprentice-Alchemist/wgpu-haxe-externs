@@ -2,28 +2,29 @@ package wgpu;
 
 typedef GPUSamplerDescriptor = {
 	@:optional
-	var addressModeU : GPUAddressMode;
+	var addressModeU:GPUAddressMode;
 	@:optional
-	var addressModeV : GPUAddressMode;
+	var addressModeV:GPUAddressMode;
 	@:optional
-	var addressModeW : GPUAddressMode;
+	var addressModeW:GPUAddressMode;
 	@:optional
-	var magFilter : GPUFilterMode;
+	var magFilter:GPUFilterMode;
 	@:optional
-	var minFilter : GPUFilterMode;
+	var minFilter:GPUFilterMode;
 	@:optional
-	var mipmapFilter : GPUFilterMode;
+	var mipmapFilter:GPUFilterMode;
 	@:optional
-	var lodMinClamp : Float;
+	var lodMinClamp:Float;
 	@:optional
-	var lodMaxClamp : Float;
+	var lodMaxClamp:Float;
 	@:optional
-	var compare : GPUCompareFunction;
+	var compare:GPUCompareFunction;
 	@:optional
-	var maxAnisotropy : Float;
+	var maxAnisotropy:Float;
+
 	/**
 		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
 	**/
 	@:optional
-	var label : String;
+	var label:String;
 };

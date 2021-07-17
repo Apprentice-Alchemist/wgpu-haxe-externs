@@ -8,5 +8,5 @@ typedef GPUObjectBase = {
 		It has no specified format, and therefore cannot be reliably machine-parsed.
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
-	var label : Null<String>;
+	var label:Null<String>;
 };

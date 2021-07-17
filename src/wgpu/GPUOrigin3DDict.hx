@@ -2,9 +2,9 @@ package wgpu;
 
 typedef GPUOrigin3DDict = {
 	@:optional
-	var x : Float;
+	var x:Float;
 	@:optional
-	var y : Float;
+	var y:Float;
 	@:optional
-	var z : Float;
+	var z:Float;
 };

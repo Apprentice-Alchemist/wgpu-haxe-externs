@@ -10,11 +10,11 @@ package wgpu;
 		It has no specified format, and therefore cannot be reliably machine-parsed.
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
-	var label : Null<String>;
+	var label:Null<String>;
+
 	/**
 		Gets a {@link GPUBindGroupLayout} that is compatible with the {@link GPUPipelineBase}'s
 		{@link GPUBindGroupLayout} at `index`.
 	**/
 	function getBindGroupLayout(index:Float):GPUBindGroupLayout;
-	
 }

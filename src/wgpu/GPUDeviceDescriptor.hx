@@ -8,9 +8,11 @@ typedef GPUDeviceDescriptor = {
 		of API calls on the resulting device.
 	**/
 	@:optional
-	var requiredFeatures : Iterable<GPUFeatureName>;
+	var requiredFeatures:Iterable<GPUFeatureName>;
+
 	@:optional
-	var nonGuaranteedFeatures : Iterable<GPUFeatureName>;
+	var nonGuaranteedFeatures:Iterable<GPUFeatureName>;
+
 	/**
 		Specifies the limits that are required by the device request.
 		The request will fail if the adapter cannot provide these limits.
@@ -23,12 +25,14 @@ typedef GPUDeviceDescriptor = {
 		and define the conversion of the whole object by reference to WebIDL. -->
 	**/
 	@:optional
-	var requiredLimits : { };
+	var requiredLimits:{};
+
 	@:optional
-	var nonGuaranteedLimits : { };
+	var nonGuaranteedLimits:{};
+
 	/**
 		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
 	**/
 	@:optional
-	var label : String;
+	var label:String;
 };

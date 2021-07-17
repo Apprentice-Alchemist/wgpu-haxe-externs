@@ -2,9 +2,9 @@ package wgpu;
 
 typedef GPUBlendComponent = {
 	@:optional
-	var srcFactor : GPUBlendFactor;
+	var srcFactor:GPUBlendFactor;
 	@:optional
-	var dstFactor : GPUBlendFactor;
+	var dstFactor:GPUBlendFactor;
 	@:optional
-	var operation : GPUBlendOperation;
+	var operation:GPUBlendOperation;
 };

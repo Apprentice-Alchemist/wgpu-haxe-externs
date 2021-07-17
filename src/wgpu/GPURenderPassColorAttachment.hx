@@ -5,14 +5,16 @@ typedef GPURenderPassColorAttachment = {
 		A {@link GPUTextureView} describing the texture subresource that will be output to for this
 		color attachment.
 	**/
-	var view : GPUTextureView;
+	var view:GPUTextureView;
+
 	/**
 		A {@link GPUTextureView} describing the texture subresource that will receive the resolved
 		output for this color attachment if {@link GPURenderPassColorAttachment#view} is
 		multisampled.
 	**/
 	@:optional
-	var resolveTarget : GPUTextureView;
+	var resolveTarget:GPUTextureView;
+
 	/**
 		If a {@link GPULoadOp}, indicates the load operation to perform on
 		{@link GPURenderPassColorAttachment#view} prior to executing the render pass.
@@ -20,10 +22,11 @@ typedef GPURenderPassColorAttachment = {
 		to prior to executing the render pass.
 		Note: It is recommended to prefer a clear-value; see {@link GPULoadOp#"load"}.
 	**/
-	var loadValue : ts.AnyOf3<String, Iterable<Float>, GPUColorDict>;
+	var loadValue:ts.AnyOf3<String, Iterable<Float>, GPUColorDict>;
+
 	/**
 		The store operation to perform on {@link GPURenderPassColorAttachment#view}
 		after executing the render pass.
 	**/
-	var storeOp : GPUStoreOp;
+	var storeOp:GPUStoreOp;
 };

@@ -11,5 +11,6 @@ enum abstract GPUBufferUsage(Int) {
 	final STORAGE = 0x0080;
 	final INDIRECT = 0x0100;
 	final QUERY_RESOLVE = 0x0200;
+
 	@:op(A | B) static function and(a:GPUBufferUsage, b:GPUBufferUsage):GPUBufferUsage;
 }

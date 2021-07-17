@@ -2,11 +2,11 @@ package wgpu;
 
 typedef GPUStencilFaceState = {
 	@:optional
-	var compare : GPUCompareFunction;
+	var compare:GPUCompareFunction;
 	@:optional
-	var failOp : GPUStencilOperation;
+	var failOp:GPUStencilOperation;
 	@:optional
-	var depthFailOp : GPUStencilOperation;
+	var depthFailOp:GPUStencilOperation;
 	@:optional
-	var passOp : GPUStencilOperation;
+	var passOp:GPUStencilOperation;
 };
