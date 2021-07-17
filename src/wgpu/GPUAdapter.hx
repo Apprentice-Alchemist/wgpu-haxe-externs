@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUAdapter") extern class GPUAdapter {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		A human-readable name identifying the adapter.
 		The contents are implementation-defined.
@@ -28,5 +24,5 @@ package wgpu;
 		Requests a device from the adapter.
 	**/
 	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;
-	static var prototype : GPUAdapter;
+	
 }

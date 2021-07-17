@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUBuffer = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Maps the given range of the {@link GPUBuffer} and resolves the returned {@link Promise} when the
 		{@link GPUBuffer}'s content is ready to be accessed with {@link GPUBuffer#getMappedRange}.

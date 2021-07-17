@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPURenderBundleEncoder = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Completes recording of the render bundle commands sequence.
 		 	descriptor:

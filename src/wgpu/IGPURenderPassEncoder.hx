@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPURenderPassEncoder = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Sets the viewport used during the rasterization stage to linearly map from normalized device
 		coordinates to viewport coordinates.

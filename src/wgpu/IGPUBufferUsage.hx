@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUBufferUsage = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	final MAP_READ : Float;
 	final MAP_WRITE : Float;
 	final COPY_SRC : Float;

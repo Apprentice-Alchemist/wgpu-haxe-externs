@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUPresentationContext") extern class GPUPresentationContext {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Configures the presentation context for this canvas. Destroys any textures produced with a
 		previous configuration.
@@ -29,5 +25,5 @@ package wgpu;
 		invocations of Update the rendering) unless {@link GPUPresentationContext#configure} is called.
 	**/
 	function getCurrentTexture():GPUTexture;
-	static var prototype : GPUPresentationContext;
+	
 }

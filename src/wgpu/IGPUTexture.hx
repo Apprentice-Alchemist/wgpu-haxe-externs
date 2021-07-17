@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUTexture = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Creates a {@link GPUTextureView}.
 	**/

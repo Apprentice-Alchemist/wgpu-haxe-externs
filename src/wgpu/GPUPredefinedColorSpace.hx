@@ -1,3 +1,6 @@
 package wgpu;
 
-typedef GPUPredefinedColorSpace = String;
+// typedef GPUPredefinedColorSpace = String;
+enum abstract GPUPredefinedColorSpace(String) {
+    var Srgb = "srgb";
+}

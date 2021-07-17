@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUPresentationContext = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Configures the presentation context for this canvas. Destroys any textures produced with a
 		previous configuration.

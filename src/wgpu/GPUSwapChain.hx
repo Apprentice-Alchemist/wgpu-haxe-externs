@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUSwapChain") extern class GPUSwapChain {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Get the {@link GPUTexture} that will be composited to the document by the {@link GPUCanvasContext}
 		that created this swap chain next.
@@ -23,5 +19,5 @@ package wgpu;
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
 	var label : Null<String>;
-	static var prototype : GPUSwapChain;
+	
 }

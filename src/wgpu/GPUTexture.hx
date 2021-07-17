@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUTexture") extern class GPUTexture {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Creates a {@link GPUTextureView}.
 	**/
@@ -23,5 +19,5 @@ package wgpu;
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
 	var label : Null<String>;
-	static var prototype : GPUTexture;
+	
 }

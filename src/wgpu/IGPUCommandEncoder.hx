@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUCommandEncoder = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Begins encoding a render pass described by `descriptor`.
 	**/

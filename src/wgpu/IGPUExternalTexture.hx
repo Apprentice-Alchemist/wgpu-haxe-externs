@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUExternalTexture = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		A label which can be used by development tools (such as error/warning messages,
 		browser developer tools, or platform debugging utilities) to identify the underlying

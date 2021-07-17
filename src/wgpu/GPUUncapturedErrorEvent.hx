@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUUncapturedErrorEvent") extern class GPUUncapturedErrorEvent {
 	function new(type:String, gpuUncapturedErrorEventInitDict:GPUUncapturedErrorEventInit);
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	final error : GPUError;
 	/**
 		Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise.
@@ -72,5 +68,5 @@ package wgpu;
 	final BUBBLING_PHASE : Float;
 	final CAPTURING_PHASE : Float;
 	final NONE : Float;
-	static var prototype : GPUUncapturedErrorEvent;
+	
 }

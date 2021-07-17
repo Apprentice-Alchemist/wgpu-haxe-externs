@@ -1,3 +1,4 @@
 package wgpu;
 
-typedef GPUStoreOp = String;
+// typedef GPUStoreOp = String;
+typedef GPUStoreOp = GPUStoreOpNew;

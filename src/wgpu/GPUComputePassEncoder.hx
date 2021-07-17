@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUComputePassEncoder") extern class GPUComputePassEncoder {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Sets the current {@link GPUComputePipeline}.
 	**/
@@ -66,5 +62,5 @@ package wgpu;
 		Inserts a single debug marker label into the {@link GPUProgrammablePassEncoder}'s commands sequence.
 	**/
 	function insertDebugMarker(markerLabel:String):Null<Any>;
-	static var prototype : GPUComputePassEncoder;
+	
 }

@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUAdapter = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		A human-readable name identifying the adapter.
 		The contents are implementation-defined.

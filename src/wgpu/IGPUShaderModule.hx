@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUShaderModule = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Returns any messages generated during the {@link GPUShaderModule}'s compilation.
 	**/

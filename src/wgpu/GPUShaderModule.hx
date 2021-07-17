@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUShaderModule") extern class GPUShaderModule {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Returns any messages generated during the {@link GPUShaderModule}'s compilation.
 	**/
@@ -19,5 +15,5 @@ package wgpu;
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
 	var label : Null<String>;
-	static var prototype : GPUShaderModule;
+	
 }

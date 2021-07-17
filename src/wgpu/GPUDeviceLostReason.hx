@@ -1,3 +1,6 @@
 package wgpu;
 
-typedef GPUDeviceLostReason = String;
+// typedef GPUDeviceLostReason = String;
+enum abstract GPUDeviceLostReason(String) {
+	var Destroyed = "destroyed";
+}

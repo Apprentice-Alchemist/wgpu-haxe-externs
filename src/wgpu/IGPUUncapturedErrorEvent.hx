@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUUncapturedErrorEvent = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	final error : GPUError;
 	/**
 		Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise.

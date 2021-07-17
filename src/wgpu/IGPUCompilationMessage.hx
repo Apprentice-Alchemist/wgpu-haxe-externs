@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUCompilationMessage = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		A human-readable string containing the message generated during the shader compilation.
 	**/

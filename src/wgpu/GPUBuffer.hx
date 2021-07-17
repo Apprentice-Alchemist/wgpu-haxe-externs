@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUBuffer") extern class GPUBuffer {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Maps the given range of the {@link GPUBuffer} and resolves the returned {@link Promise} when the
 		{@link GPUBuffer}'s content is ready to be accessed with {@link GPUBuffer#getMappedRange}.
@@ -33,5 +29,5 @@ package wgpu;
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
 	var label : Null<String>;
-	static var prototype : GPUBuffer;
+	
 }

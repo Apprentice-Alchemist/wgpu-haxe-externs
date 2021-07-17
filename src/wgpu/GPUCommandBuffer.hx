@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUCommandBuffer") extern class GPUCommandBuffer {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		The total time, in seconds, that the GPU took to execute this command buffer.
 		Note:
@@ -35,5 +31,5 @@ package wgpu;
 		In any given situation, the user agent may or may not choose to use this label.
 	**/
 	var label : Null<String>;
-	static var prototype : GPUCommandBuffer;
+	
 }

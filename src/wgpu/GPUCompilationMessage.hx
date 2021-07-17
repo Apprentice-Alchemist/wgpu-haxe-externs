@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPUCompilationMessage") extern class GPUCompilationMessage {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		A human-readable string containing the message generated during the shader compilation.
 	**/
@@ -50,5 +46,5 @@ package wgpu;
 		{@link GPUCompilationMessage#length} must be 0.
 	**/
 	final length : Float;
-	static var prototype : GPUCompilationMessage;
+	
 }

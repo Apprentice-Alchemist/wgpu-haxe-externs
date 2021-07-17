@@ -2,11 +2,7 @@ package wgpu;
 
 @:native("GPURenderBundleEncoder") extern class GPURenderBundleEncoder {
 	function new();
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Completes recording of the render bundle commands sequence.
 		 	descriptor:
@@ -76,5 +72,5 @@ package wgpu;
 		the same order as the arguments for {@link GPURenderEncoderBase#drawIndexed}. For example:
 	**/
 	function drawIndexedIndirect(indirectBuffer:GPUBuffer, indirectOffset:Float):Null<Any>;
-	static var prototype : GPURenderBundleEncoder;
+	
 }

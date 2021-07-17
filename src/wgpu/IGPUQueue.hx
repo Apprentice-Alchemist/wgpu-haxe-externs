@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUQueue = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		Schedules the execution of the command buffers by the GPU on this queue.
 		 	`commandBuffers`:

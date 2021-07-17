@@ -1,11 +1,7 @@
 package wgpu;
 
 typedef IGPUCommandBuffer = {
-	/**
-		Nominal type branding.
-		https://github.com/microsoft/TypeScript/pull/33038
-	**/
-	final __brand : String;
+
 	/**
 		The total time, in seconds, that the GPU took to execute this command buffer.
 		Note:
