@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUTextureDimension = String;
-enum abstract GPUTextureDimension(String) {
-	var OneD = "1d";
-	var TwoD = "2d";
-	var ThreeD = "3d";
+@:enum
+abstract GPUTextureDimension(String) from String to String {
+	var _1D = "1d";
+	var _2D = "2d";
+	var _3D = "3d";
 }

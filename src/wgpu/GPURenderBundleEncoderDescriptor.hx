@@ -1,15 +1,9 @@
 package wgpu;
 
 typedef GPURenderBundleEncoderDescriptor = {
-	var colorFormats:Iterable<GPUTextureFormat>;
+	> wgpu.GPURenderPassLayout,
 	@:optional
-	var depthStencilFormat:GPUTextureFormat;
+	var depthReadOnly:Bool;
 	@:optional
-	var sampleCount:Float;
-
-	/**
-		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
-	**/
-	@:optional
-	var label:String;
+	var stencilReadOnly:Bool;
 };

@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUBufferDynamicOffset = Float;
+typedef GPUBufferDynamicOffset = Int;

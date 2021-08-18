@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUExtent3D = ts.AnyOf2<GPUExtent3DDict, Iterable<Float>>;
+typedef GPUExtent3D = haxe.extern.EitherType<wgpu.GPUExtent3DDict, Array<wgpu.GPUIntegerCoordinate>>;

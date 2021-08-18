@@ -1,4 +1,7 @@
 package wgpu;
 
-// typedef GPUStoreOp = String;
-typedef GPUStoreOp = GPUStoreOpNew;
+@:enum
+abstract GPUStoreOp(String) from String to String {
+	var STORE = "store";
+	var DISCARD = "discard";
+}

@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUPowerPreference = String;
-enum abstract GPUPowerPreference(String) {
-	var LowPower = "low-power";
-	var HighPerformance = "high-performance";
+@:enum
+abstract GPUPowerPreference(String) from String to String {
+	var LOW_POWER = "low-power";
+	var HIGH_PERFORMANCE = "high-performance";
 }

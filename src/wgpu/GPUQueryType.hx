@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUQueryType = String;
-enum abstract GPUQueryType(String) {
-	var Occlusion = "occlusion";
-	var PipelineStatistics = "pipeline-statistics";
-	var Timestamp = "timestamp";
+@:enum
+abstract GPUQueryType(String) from String to String {
+	var OCCLUSION = "occlusion";
+	var PIPELINE_STATISTICS = "pipeline-statistics";
+	var TIMESTAMP = "timestamp";
 }

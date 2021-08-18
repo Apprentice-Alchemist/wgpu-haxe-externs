@@ -1,6 +1,6 @@
 package wgpu;
 
 typedef GPUBindGroupEntry = {
-	var binding:Int;
-	var resource:GPUBindingResource;
-};
+	var binding:wgpu.GPUIndex32;
+	var resource:wgpu.GPUBindingResource;
+}

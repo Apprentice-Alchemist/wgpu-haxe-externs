@@ -2,9 +2,9 @@ package wgpu;
 
 typedef GPUOrigin3DDict = {
 	@:optional
-	var x:Float;
+	var x:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var y:Float;
+	var y:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var z:Float;
-};
+	var z:wgpu.GPUIntegerCoordinate;
+}

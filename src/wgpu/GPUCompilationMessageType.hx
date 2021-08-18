@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUCompilationMessageType = String;
-enum abstract GPUCompilationMessageType(String) {
-	var Error = "error";
-	var Warning = "warning";
-	var Info = "info";
+@:enum
+abstract GPUCompilationMessageType(String) from String to String {
+	var ERROR = "error";
+	var WARNING = "warning";
+	var INFO = "info";
 }

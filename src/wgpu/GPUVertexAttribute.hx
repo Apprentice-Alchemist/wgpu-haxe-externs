@@ -1,7 +1,7 @@
 package wgpu;
 
 typedef GPUVertexAttribute = {
-	var format:GPUVertexFormat;
-	var offset:Int;
-	var shaderLocation:Int;
-};
+	var format:wgpu.GPUVertexFormat;
+	var offset:wgpu.GPUSize64;
+	var shaderLocation:wgpu.GPUIndex32;
+}

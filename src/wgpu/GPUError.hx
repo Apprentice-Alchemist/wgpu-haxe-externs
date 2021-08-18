@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUError = ts.AnyOf2<GPUOutOfMemoryError, GPUValidationError>;
+typedef GPUError = haxe.extern.EitherType<wgpu.GPUValidationError, wgpu.GPUOutOfMemoryError>;

@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUFilterMode = String;
-enum abstract GPUFilterMode(String) {
-	var Nearest = "nearest";
-	var Linear = "linear";
+@:enum
+abstract GPUFilterMode(String) from String to String {
+	var NEAREST = "nearest";
+	var LINEAR = "linear";
 }

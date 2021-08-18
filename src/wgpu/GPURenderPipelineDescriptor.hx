@@ -1,21 +1,14 @@
 package wgpu;
 
 typedef GPURenderPipelineDescriptor = {
-	var vertex:GPUVertexState;
+	> wgpu.GPUPipelineDescriptorBase,
+	var vertex:wgpu.GPUVertexState;
 	@:optional
-	var primitive:GPUPrimitiveState;
+	var primitive:wgpu.GPUPrimitiveState;
 	@:optional
-	var depthStencil:GPUDepthStencilState;
+	var depthStencil:wgpu.GPUDepthStencilState;
 	@:optional
-	var multisample:GPUMultisampleState;
+	var multisample:wgpu.GPUMultisampleState;
 	@:optional
-	var fragment:GPUFragmentState;
-	@:optional
-	var layout:GPUPipelineLayout;
-
-	/**
-		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
-	**/
-	@:optional
-	var label:String;
+	var fragment:wgpu.GPUFragmentState;
 };

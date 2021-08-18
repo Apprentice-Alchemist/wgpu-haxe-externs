@@ -1,3 +1,4 @@
 package wgpu;
 
-typedef GPUBindingResource = ts.AnyOf4<GPUSampler, GPUTextureView, GPUBufferBinding, GPUExternalTexture>;
+typedef GPUBindingResource = haxe.extern.EitherType<haxe.extern.EitherType<haxe.extern.EitherType<wgpu.GPUExternalTexture, wgpu.GPUSampler>,
+	wgpu.GPUTextureView>, wgpu.GPUBufferBinding>;

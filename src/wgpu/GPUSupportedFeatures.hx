@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUSupportedFeatures = js.lib.ReadonlySet<String>;
+typedef GPUSupportedFeatures = js.lib.Set<String>;

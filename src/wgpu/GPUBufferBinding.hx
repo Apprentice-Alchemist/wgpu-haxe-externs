@@ -1,9 +1,9 @@
 package wgpu;
 
 typedef GPUBufferBinding = {
-	var buffer:GPUBuffer;
+	var buffer:wgpu.GPUBuffer;
 	@:optional
-	var offset:Int;
+	var offset:wgpu.GPUSize64;
 	@:optional
-	var size:Int;
-};
+	var size:wgpu.GPUSize64;
+}

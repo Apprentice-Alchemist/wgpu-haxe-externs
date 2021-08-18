@@ -1,3 +1,5 @@
 package wgpu;
 
-typedef GPUCommandBufferDescriptor = GPUObjectDescriptorBase;
+typedef GPUCommandBufferDescriptor = {
+	> wgpu.GPUObjectDescriptorBase,
+};

@@ -1,13 +1,13 @@
 package wgpu;
 
-// typedef GPUCompareFunction = String;
-enum abstract GPUCompareFunction(String) {
-	var Never = "never";
-	var Less = "less";
-	var Equal = "equal";
-	var LessEqual = "less-equal";
-	var Greater = "greater";
-	var NotEqual = "not-equal";
-	var GreaterEqual = "GreaterEqual";
-	var Always = "always";
+@:enum
+abstract GPUCompareFunction(String) from String to String {
+	var NEVER = "never";
+	var LESS = "less";
+	var EQUAL = "equal";
+	var LESS_EQUAL = "less-equal";
+	var GREATER = "greater";
+	var NOT_EQUAL = "not-equal";
+	var GREATER_EQUAL = "greater-equal";
+	var ALWAYS = "always";
 }

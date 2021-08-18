@@ -1,8 +1,7 @@
 package wgpu;
 
-@:native("GPUDeviceLostInfo") extern class GPUDeviceLostInfo {
-	function new();
-
-	final reason:Null<String>;
+@:native("GPUDeviceLostInfo")
+extern class GPUDeviceLostInfo {
+	final reason:haxe.extern.EitherType<Void, wgpu.GPUDeviceLostReason>;
 	final message:String;
 }

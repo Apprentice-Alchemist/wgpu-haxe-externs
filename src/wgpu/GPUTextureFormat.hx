@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUTextureFormat = String;
-enum abstract GPUTextureFormat(String) {
+@:enum
+abstract GPUTextureFormat(String) from String to String {
 	var R8UNORM = "r8unorm";
 	var R8SNORM = "r8snorm";
 	var R8UINT = "r8uint";

@@ -1,24 +1,19 @@
 package wgpu;
 
 typedef GPUTextureViewDescriptor = {
+	> wgpu.GPUObjectDescriptorBase,
 	@:optional
-	var format:GPUTextureFormat;
+	var format:wgpu.GPUTextureFormat;
 	@:optional
-	var dimension:GPUTextureViewDimension;
+	var dimension:wgpu.GPUTextureViewDimension;
 	@:optional
-	var aspect:GPUTextureAspect;
+	var aspect:wgpu.GPUTextureAspect;
 	@:optional
-	var baseMipLevel:Int;
+	var baseMipLevel:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var mipLevelCount:Int;
+	var mipLevelCount:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var baseArrayLayer:Int;
+	var baseArrayLayer:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var arrayLayerCount:Int;
-
-	/**
-		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
-	**/
-	@:optional
-	var label:String;
+	var arrayLayerCount:wgpu.GPUIntegerCoordinate;
 };

@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUCullMode = String;
-enum abstract GPUCullMode(String) {
-	var None = "none";
-	var Front = "front";
-	var Back = "back";
+@:enum
+abstract GPUCullMode(String) from String to String {
+	var NONE = "none";
+	var FRONT = "front";
+	var BACK = "back";
 }

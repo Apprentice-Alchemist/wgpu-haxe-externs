@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUFlagsConstant = Float;
+typedef GPUFlagsConstant = Int;

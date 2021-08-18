@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUDepthBias = Float;
+typedef GPUDepthBias = Int;

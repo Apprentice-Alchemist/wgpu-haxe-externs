@@ -1,10 +1,7 @@
 package wgpu;
 
 typedef GPUVertexState = {
+	> wgpu.GPUProgrammableStage,
 	@:optional
-	var buffers:Iterable<Null<GPUVertexBufferLayout>>;
-	var module:GPUShaderModule;
-	var entryPoint:String;
-	@:optional
-	var constants:{};
+	var buffers:Array<Null<wgpu.GPUVertexBufferLayout>>;
 };

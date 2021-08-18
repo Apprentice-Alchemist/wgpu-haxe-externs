@@ -1,0 +1,4 @@
+-lib webidl
+--run webidl.Main
+wgpu.idl
+-o src

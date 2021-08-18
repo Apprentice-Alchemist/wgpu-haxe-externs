@@ -1,3 +1,5 @@
 package wgpu;
 
-typedef GPURenderBundleDescriptor = GPUObjectDescriptorBase;
+typedef GPURenderBundleDescriptor = {
+	> wgpu.GPUObjectDescriptorBase,
+};

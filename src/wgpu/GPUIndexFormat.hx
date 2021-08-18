@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUIndexFormat = String;
-enum abstract GPUIndexFormat(String) {
-	var UInt16 = "uint16";
-	var UInt32 = "uint32";
+@:enum
+abstract GPUIndexFormat(String) from String to String {
+	var UINT16 = "uint16";
+	var UINT32 = "uint32";
 }

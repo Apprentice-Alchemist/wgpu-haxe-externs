@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUOrigin3D = ts.AnyOf2<Iterable<Float>, GPUOrigin3DDict>;
+typedef GPUOrigin3D = haxe.extern.EitherType<wgpu.GPUOrigin3DDict, Array<wgpu.GPUIntegerCoordinate>>;

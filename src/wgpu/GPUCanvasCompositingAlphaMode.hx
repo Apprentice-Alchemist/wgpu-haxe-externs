@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUCanvasCompositingAlphaMode = String;
-enum abstract GPUCanvasCompositingAlphaMode(String) {
-	var Opaque = "opaque";
-	var Premultiplied = "premultiplied";
+@:enum
+abstract GPUCanvasCompositingAlphaMode(String) from String to String {
+	var OPAQUE = "opaque";
+	var PREMULTIPLIED = "premultiplied";
 }

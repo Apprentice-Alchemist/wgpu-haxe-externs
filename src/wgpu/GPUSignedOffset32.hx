@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUSignedOffset32 = Float;
+typedef GPUSignedOffset32 = Int;

@@ -1,3 +1,5 @@
 package wgpu;
 
-typedef GPUComputePassDescriptor = GPUObjectDescriptorBase;
+typedef GPUComputePassDescriptor = {
+	> wgpu.GPUObjectDescriptorBase,
+};

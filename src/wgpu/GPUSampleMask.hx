@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUSampleMask = Float;
+typedef GPUSampleMask = Int;

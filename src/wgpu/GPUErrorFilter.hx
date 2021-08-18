@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUErrorFilter = String;
-enum abstract GPUErrorFilter(String) {
-	var OutOfMemory = "out-of-memory";
-	var Validation = "validation";
+@:enum
+abstract GPUErrorFilter(String) from String to String {
+	var OUT_OF_MEMORY = "out-of-memory";
+	var VALIDATION = "validation";
 }

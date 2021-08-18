@@ -2,13 +2,13 @@ package wgpu;
 
 typedef GPUPrimitiveState = {
 	@:optional
-	var topology:GPUPrimitiveTopology;
+	var topology:wgpu.GPUPrimitiveTopology;
 	@:optional
-	var stripIndexFormat:GPUIndexFormat;
+	var stripIndexFormat:wgpu.GPUIndexFormat;
 	@:optional
-	var frontFace:GPUFrontFace;
+	var frontFace:wgpu.GPUFrontFace;
 	@:optional
-	var cullMode:GPUCullMode;
+	var cullMode:wgpu.GPUCullMode;
 	@:optional
 	var clampDepth:Bool;
-};
+}

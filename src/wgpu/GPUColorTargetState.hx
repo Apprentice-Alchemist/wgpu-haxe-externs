@@ -1,9 +1,9 @@
 package wgpu;
 
 typedef GPUColorTargetState = {
-	var format:GPUTextureFormat;
+	var format:wgpu.GPUTextureFormat;
 	@:optional
-	var blend:GPUBlendState;
+	var blend:wgpu.GPUBlendState;
 	@:optional
-	var writeMask:GPUColorWrite;
-};
+	var writeMask:wgpu.GPUColorWriteFlags;
+}

@@ -1,6 +1,6 @@
 package wgpu;
 
-// typedef GPULoadOp = String;
-enum abstract GPULoadOp(String) {
-	var Load = "load";
+@:enum
+abstract GPULoadOp(String) from String to String {
+	var LOAD = "load";
 }

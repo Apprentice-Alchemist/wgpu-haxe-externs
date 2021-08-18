@@ -1,21 +1,31 @@
 package wgpu;
 
-@:native("GPUSupportedLimits") extern class GPUSupportedLimits {
-	static final maxTextureDimension1D:Int;
-	static final maxTextureDimension2D:Int;
-	static final maxTextureDimension3D:Int;
-	static final maxTextureArrayLayers:Int;
-	static final maxBindGroups:Int;
-	static final maxDynamicUniformBuffersPerPipelineLayout:Int;
-	static final maxDynamicStorageBuffersPerPipelineLayout:Int;
-	static final maxSampledTexturesPerShaderStage:Int;
-	static final maxSamplersPerShaderStage:Int;
-	static final maxStorageBuffersPerShaderStage:Int;
-	static final maxStorageTexturesPerShaderStage:Int;
-	static final maxUniformBuffersPerShaderStage:Int;
-	static final maxUniformBufferBindingSize:Int;
-	static final maxStorageBufferBindingSize:Int;
-	static final maxVertexBuffers:Int;
-	static final maxVertexAttributes:Int;
-	static final maxVertexBufferArrayStride:Int;
+@:native("GPUSupportedLimits")
+extern class GPUSupportedLimits {
+	final maxTextureDimension1D:Int;
+	final maxTextureDimension2D:Int;
+	final maxTextureDimension3D:Int;
+	final maxTextureArrayLayers:Int;
+	final maxBindGroups:Int;
+	final maxDynamicUniformBuffersPerPipelineLayout:Int;
+	final maxDynamicStorageBuffersPerPipelineLayout:Int;
+	final maxSampledTexturesPerShaderStage:Int;
+	final maxSamplersPerShaderStage:Int;
+	final maxStorageBuffersPerShaderStage:Int;
+	final maxStorageTexturesPerShaderStage:Int;
+	final maxUniformBuffersPerShaderStage:Int;
+	final maxUniformBufferBindingSize:Int;
+	final maxStorageBufferBindingSize:Int;
+	final minUniformBufferOffsetAlignment:Int;
+	final minStorageBufferOffsetAlignment:Int;
+	final maxVertexBuffers:Int;
+	final maxVertexAttributes:Int;
+	final maxVertexBufferArrayStride:Int;
+	final maxInterStageShaderComponents:Int;
+	final maxComputeWorkgroupStorageSize:Int;
+	final maxComputeInvocationsPerWorkgroup:Int;
+	final maxComputeWorkgroupSizeX:Int;
+	final maxComputeWorkgroupSizeY:Int;
+	final maxComputeWorkgroupSizeZ:Int;
+	final maxComputeWorkgroupsPerDimension:Int;
 }

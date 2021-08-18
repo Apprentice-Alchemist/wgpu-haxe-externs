@@ -1,18 +1,18 @@
 package wgpu;
 
-// typedef GPUBlendFactor = String;
-enum abstract GPUBlendFactor(String) {
-	var Zero = "zero";
-	var One = "one";
-	var Src = "src";
-	var OneMinusSrc = "one-minus-src";
-	var SrcAlpha = "src-alpha";
-	var OneMinusSrcAlpha = "one-minus-src-alpha";
-	var Dst = "dst";
-	var OneMinusDst = "one-minus-dst";
-	var DstAlpha = "dst-alpha";
-	var OneMinusDstAlpha = "one-minus-dst-alpha";
-	var SrcAlphaSaturated = "src-alpha-saturated";
-	var Constant = "constant";
-	var OneMinusConstant = "one-minus-constant";
+@:enum
+abstract GPUBlendFactor(String) from String to String {
+	var ZERO = "zero";
+	var ONE = "one";
+	var SRC = "src";
+	var ONE_MINUS_SRC = "one-minus-src";
+	var SRC_ALPHA = "src-alpha";
+	var ONE_MINUS_SRC_ALPHA = "one-minus-src-alpha";
+	var DST = "dst";
+	var ONE_MINUS_DST = "one-minus-dst";
+	var DST_ALPHA = "dst-alpha";
+	var ONE_MINUS_DST_ALPHA = "one-minus-dst-alpha";
+	var SRC_ALPHA_SATURATED = "src-alpha-saturated";
+	var CONSTANT = "constant";
+	var ONE_MINUS_CONSTANT = "one-minus-constant";
 }

@@ -1,52 +1,16 @@
 package wgpu;
 
 typedef GPUBindGroupLayoutEntry = {
-	/**
-		A unique identifier for a resource binding within a
-		{@link GPUBindGroupLayoutEntry}, a corresponding {@link GPUBindGroupEntry},
-		and the {@link GPUShaderModule}s.
-	**/
-	var binding:Int;
-
-	/**
-		A bitset of the members of {@link GPUShaderStage}.
-		Each set bit indicates that a {@link GPUBindGroupLayoutEntry}'s resource
-		will be accessible from the associated shader stage.
-	**/
-	var visibility:Int;
-
-	/**
-		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
-		is {@link GPUBufferBinding}.
-	**/
+	var binding:wgpu.GPUIndex32;
+	var visibility:wgpu.GPUShaderStageFlags;
 	@:optional
-	var buffer:GPUBufferBindingLayout;
-
-	/**
-		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
-		is {@link GPUSampler}.
-	**/
+	var buffer:wgpu.GPUBufferBindingLayout;
 	@:optional
-	var sampler:GPUSamplerBindingLayout;
-
-	/**
-		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
-		is {@link GPUTextureView}.
-	**/
+	var sampler:wgpu.GPUSamplerBindingLayout;
 	@:optional
-	var texture:GPUTextureBindingLayout;
-
-	/**
-		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
-		is {@link GPUTextureView}.
-	**/
+	var texture:wgpu.GPUTextureBindingLayout;
 	@:optional
-	var storageTexture:GPUStorageTextureBindingLayout;
-
-	/**
-		When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
-		is {@link GPUExternalTexture}.
-	**/
+	var storageTexture:wgpu.GPUStorageTextureBindingLayout;
 	@:optional
-	var externalTexture:GPUExternalTextureBindingLayout;
-};
+	var externalTexture:wgpu.GPUExternalTextureBindingLayout;
+}

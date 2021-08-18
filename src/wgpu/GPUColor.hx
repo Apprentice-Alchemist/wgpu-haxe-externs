@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUColor = ts.AnyOf2<Iterable<Float>, GPUColorDict>;
+typedef GPUColor = haxe.extern.EitherType<wgpu.GPUColorDict, Array<Float>>;

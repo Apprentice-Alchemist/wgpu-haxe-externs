@@ -1,10 +1,10 @@
 package wgpu;
 
-// typedef GPUBlendOperation = String;
-enum abstract GPUBlendOperation(String) {
-	var Add = "add";
-	var Substract = "substract";
-	var ReverseSubstract = "reverse-substract";
-	var Min = "min";
-	var Max = "max";
+@:enum
+abstract GPUBlendOperation(String) from String to String {
+	var ADD = "add";
+	var SUBTRACT = "subtract";
+	var REVERSE_SUBTRACT = "reverse-subtract";
+	var MIN = "min";
+	var MAX = "max";
 }

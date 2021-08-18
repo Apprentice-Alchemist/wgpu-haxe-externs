@@ -1,7 +1,6 @@
 package wgpu;
 
-// typedef GPUStorageTextureAccess = String;
-enum abstract GPUStorageTextureAccess(String) {
-	var ReadOnly = "read-only";
-	var WriteOnly = "write-only";
+@:enum
+abstract GPUStorageTextureAccess(String) from String to String {
+	var WRITE_ONLY = "write-only";
 }

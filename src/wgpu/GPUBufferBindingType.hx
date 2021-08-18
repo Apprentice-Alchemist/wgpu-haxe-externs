@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUBufferBindingType = String;
-enum abstract GPUBufferBindingType(String) {
-	var Uniform = "uniform";
-	var Storage = "storage";
-	var ReadOnlyStorage = "read-only-storage";
+@:enum
+abstract GPUBufferBindingType(String) from String to String {
+	var UNIFORM = "uniform";
+	var STORAGE = "storage";
+	var READ_ONLY_STORAGE = "read-only-storage";
 }

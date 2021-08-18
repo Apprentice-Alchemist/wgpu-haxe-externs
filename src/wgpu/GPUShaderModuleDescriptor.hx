@@ -1,3 +1,8 @@
 package wgpu;
 
-typedef GPUShaderModuleDescriptor = ts.AnyOf2<GPUShaderModuleDescriptorWGSL, GPUShaderModuleDescriptorSPIRV>;
+typedef GPUShaderModuleDescriptor = {
+	> wgpu.GPUObjectDescriptorBase,
+	var code:String;
+	@:optional
+	var sourceMap:{};
+};

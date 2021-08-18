@@ -1,8 +1,8 @@
 package wgpu;
 
 typedef GPUProgrammableStage = {
-	var module:GPUShaderModule;
+	var module:wgpu.GPUShaderModule;
 	var entryPoint:String;
 	@:optional
-	var constants:{};
-};
+	var constants:haxe.DynamicAccess<wgpu.GPUPipelineConstantValue>;
+}

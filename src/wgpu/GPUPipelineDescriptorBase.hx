@@ -1,12 +1,7 @@
 package wgpu;
 
 typedef GPUPipelineDescriptorBase = {
+	> wgpu.GPUObjectDescriptorBase,
 	@:optional
-	var layout:GPUPipelineLayout;
-
-	/**
-		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
-	**/
-	@:optional
-	var label:String;
+	var layout:wgpu.GPUPipelineLayout;
 };

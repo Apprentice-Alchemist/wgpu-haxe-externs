@@ -1,11 +1,13 @@
 package wgpu;
 
-enum abstract GPUColorWrite(Int) {
-	final RED = 0x1;
-	final GREEN = 0x2;
-	final BLUE = 0x4;
-	final ALPHA = 0x8;
-	final ALL = 0xF;
+@:enum
+abstract GPUColorWrite(Int) {
+	var RED = 0x1;
+	var GREEN = 0x2;
+	var BLUE = 0x4;
+	var ALPHA = 0x8;
+	var ALL = 0xF;
 
-	@:op(A | B) static function and(a:GPUColorWrite, b:GPUColorWrite):GPUColorWrite;
+	@:op(A | B)
+	static function and(a:wgpu.GPUColorWrite, b:wgpu.GPUColorWrite):wgpu.GPUColorWrite;
 }

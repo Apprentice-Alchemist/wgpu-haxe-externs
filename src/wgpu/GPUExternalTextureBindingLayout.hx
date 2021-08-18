@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUExternalTextureBindingLayout = {};
+typedef GPUExternalTextureBindingLayout = {}

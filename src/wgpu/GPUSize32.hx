@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUSize32 = Float;
+typedef GPUSize32 = Int;

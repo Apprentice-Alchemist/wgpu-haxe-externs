@@ -1,19 +1,14 @@
 package wgpu;
 
 typedef GPUTextureDescriptor = {
-	var size:GPUExtent3DStrict;
+	> wgpu.GPUObjectDescriptorBase,
+	var size:wgpu.GPUExtent3D;
 	@:optional
-	var mipLevelCount:Int;
+	var mipLevelCount:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var sampleCount:Int;
+	var sampleCount:wgpu.GPUSize32;
 	@:optional
-	var dimension:GPUTextureDimension;
-	var format:GPUTextureFormat;
-	var usage:GPUTextureUsage;
-
-	/**
-		The initial value of {@link GPUObjectBase#label|GPUObjectBase.label}.
-	**/
-	@:optional
-	var label:String;
+	var dimension:wgpu.GPUTextureDimension;
+	var format:wgpu.GPUTextureFormat;
+	var usage:wgpu.GPUTextureUsageFlags;
 };

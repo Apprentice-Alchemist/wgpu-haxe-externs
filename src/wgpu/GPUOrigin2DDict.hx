@@ -2,7 +2,7 @@ package wgpu;
 
 typedef GPUOrigin2DDict = {
 	@:optional
-	var x:Float;
+	var x:wgpu.GPUIntegerCoordinate;
 	@:optional
-	var y:Float;
-};
+	var y:wgpu.GPUIntegerCoordinate;
+}

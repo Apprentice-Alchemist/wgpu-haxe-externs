@@ -1,10 +1,10 @@
 package wgpu;
 
-// typedef GPUTextureSampleType = String;
-enum abstract GPUTextureSampleType(String) {
-	var Float = "float";
-	var UnfilterableFloat = "unfilterable-float";
-	var Depth = "depth";
-	var SInt = "sint";
-	var UInt = "uint";
+@:enum
+abstract GPUTextureSampleType(String) from String to String {
+	var FLOAT = "float";
+	var UNFILTERABLE_FLOAT = "unfilterable-float";
+	var DEPTH = "depth";
+	var SINT = "sint";
+	var UINT = "uint";
 }

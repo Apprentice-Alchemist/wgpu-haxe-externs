@@ -1,3 +1,3 @@
 package wgpu;
 
-typedef GPUStencilValue = Float;
+typedef GPUStencilValue = Int;

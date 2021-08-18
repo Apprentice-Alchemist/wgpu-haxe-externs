@@ -1,7 +1,7 @@
 package wgpu;
 
-// typedef GPUVertexFormat = String;
-enum abstract GPUVertexFormat(String) {
+@:enum
+abstract GPUVertexFormat(String) from String to String {
 	var UINT8X2 = "uint8x2";
 	var UINT8X4 = "uint8x4";
 	var SINT8X2 = "sint8x2";

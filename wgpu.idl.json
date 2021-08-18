@@ -1,0 +1,10 @@
+{
+    "pack":"wgpu",
+    "typemap":{
+        "Event":"js.html.Event",
+        "EventInit":"js.html.EventInit",
+        "EventTarget":"js.html.EventTarget",
+        "EventHandler":"haxe.Constraints.Function",
+        "BufferSource":"js.lib.ArrayBufferView"
+    }
+}

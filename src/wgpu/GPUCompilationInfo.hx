@@ -1,7 +1,6 @@
 package wgpu;
 
-@:native("GPUCompilationInfo") extern class GPUCompilationInfo {
-	function new();
-
-	final messages:haxe.ds.ReadOnlyArray<GPUCompilationMessage>;
+@:native("GPUCompilationInfo")
+extern class GPUCompilationInfo {
+	final messages:haxe.ds.ReadOnlyArray<wgpu.GPUCompilationMessage>;
 }

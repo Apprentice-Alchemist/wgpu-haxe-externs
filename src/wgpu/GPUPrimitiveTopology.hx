@@ -1,10 +1,10 @@
 package wgpu;
 
-// typedef GPUPrimitiveTopology = String;
-enum abstract GPUPrimitiveTopology(String) {
-	var PointList = "point-list";
-	var LineList = "line-list";
-	var LineStrip = "line-strip";
-	var TriangleList = "triangle-list";
-	var TriangleStrip = "triangle-strip";
+@:enum
+abstract GPUPrimitiveTopology(String) from String to String {
+	var POINT_LIST = "point-list";
+	var LINE_LIST = "line-list";
+	var LINE_STRIP = "line-strip";
+	var TRIANGLE_LIST = "triangle-list";
+	var TRIANGLE_STRIP = "triangle-strip";
 }

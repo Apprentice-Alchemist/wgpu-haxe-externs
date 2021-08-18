@@ -1,8 +1,8 @@
 package wgpu;
 
-// typedef GPUTextureAspect = String;
-enum abstract GPUTextureAspect(String) {
-	var All = "all";
-	var StencilOnly = "stencil-only";
-	var DepthOnly = "depth-only";
+@:enum
+abstract GPUTextureAspect(String) from String to String {
+	var ALL = "all";
+	var STENCIL_ONLY = "stencil-only";
+	var DEPTH_ONLY = "depth-only";
 }

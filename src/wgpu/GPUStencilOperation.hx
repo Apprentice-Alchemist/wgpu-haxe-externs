@@ -1,13 +1,13 @@
 package wgpu;
 
-// typedef GPUStencilOperation = String;
-enum abstract GPUStencilOperation(String) {
-	var Keep = "keep";
-	var Zero = "zero";
-	var Replace = "replace";
-	var Invert = "invert";
-	var IncrementClamp = "increment-clamp";
-	var DecrementClamp = "decrement-clamp";
-	var IncrementWrap = "increment-wrap";
-	var DecrementWrap = "decrement-wrap";
+@:enum
+abstract GPUStencilOperation(String) from String to String {
+	var KEEP = "keep";
+	var ZERO = "zero";
+	var REPLACE = "replace";
+	var INVERT = "invert";
+	var INCREMENT_CLAMP = "increment-clamp";
+	var DECREMENT_CLAMP = "decrement-clamp";
+	var INCREMENT_WRAP = "increment-wrap";
+	var DECREMENT_WRAP = "decrement-wrap";
 }

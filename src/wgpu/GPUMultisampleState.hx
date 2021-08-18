@@ -2,9 +2,9 @@ package wgpu;
 
 typedef GPUMultisampleState = {
 	@:optional
-	var count:Float;
+	var count:wgpu.GPUSize32;
 	@:optional
-	var mask:Float;
+	var mask:wgpu.GPUSampleMask;
 	@:optional
 	var alphaToCoverageEnabled:Bool;
-};
+}

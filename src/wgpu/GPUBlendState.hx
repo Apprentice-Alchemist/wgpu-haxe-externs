@@ -1,6 +1,6 @@
 package wgpu;
 
 typedef GPUBlendState = {
-	var color:GPUBlendComponent;
-	var alpha:GPUBlendComponent;
-};
+	var color:wgpu.GPUBlendComponent;
+	var alpha:wgpu.GPUBlendComponent;
+}
