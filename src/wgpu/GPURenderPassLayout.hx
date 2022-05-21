@@ -2,7 +2,7 @@ package wgpu;
 
 typedef GPURenderPassLayout = {
 	> wgpu.GPUObjectDescriptorBase,
-	var colorFormats:Array<wgpu.GPUTextureFormat>;
+	var colorFormats:Array<Null<wgpu.GPUTextureFormat>>;
 	@:optional
 	var depthStencilFormat:wgpu.GPUTextureFormat;
 	@:optional

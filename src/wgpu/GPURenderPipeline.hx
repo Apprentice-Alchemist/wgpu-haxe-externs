@@ -2,6 +2,6 @@ package wgpu;
 
 @:native("GPURenderPipeline")
 extern class GPURenderPipeline {
-	var label:Null<String>;
+	var label:String;
 	function getBindGroupLayout(index:Int):wgpu.GPUBindGroupLayout;
 }

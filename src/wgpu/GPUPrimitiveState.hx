@@ -10,5 +10,5 @@ typedef GPUPrimitiveState = {
 	@:optional
 	var cullMode:wgpu.GPUCullMode;
 	@:optional
-	var clampDepth:Bool;
+	var unclippedDepth:Bool;
 }

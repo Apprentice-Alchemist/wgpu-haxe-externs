@@ -6,4 +6,6 @@ typedef GPUDeviceDescriptor = {
 	var requiredFeatures:Array<wgpu.GPUFeatureName>;
 	@:optional
 	var requiredLimits:haxe.DynamicAccess<wgpu.GPUSize64>;
+	@:optional
+	var defaultQueue:wgpu.GPUQueueDescriptor;
 };

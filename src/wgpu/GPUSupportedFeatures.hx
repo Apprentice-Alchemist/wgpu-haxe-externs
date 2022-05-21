@@ -1,3 +1,4 @@
 package wgpu;
 
-typedef GPUSupportedFeatures = js.lib.Set<String>;
+@:native("GPUSupportedFeatures")
+extern class GPUSupportedFeatures {}

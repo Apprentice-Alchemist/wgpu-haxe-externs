@@ -11,4 +11,6 @@ typedef GPUTextureDescriptor = {
 	var dimension:wgpu.GPUTextureDimension;
 	var format:wgpu.GPUTextureFormat;
 	var usage:wgpu.GPUTextureUsageFlags;
+	@:optional
+	var viewFormats:Array<wgpu.GPUTextureFormat>;
 };

@@ -1,6 +1,6 @@
 package wgpu;
 
 @:native("GPUOutOfMemoryError")
-extern class GPUOutOfMemoryError {
-	function new():Void;
+extern class GPUOutOfMemoryError extends wgpu.GPUError {
+	function new(message:String):Void;
 }

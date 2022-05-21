@@ -1,5 +1,5 @@
 package wgpu;
 
-typedef GPUCommandEncoderDescriptor = {
+typedef GPUQueueDescriptor = {
 	> wgpu.GPUObjectDescriptorBase,
 };

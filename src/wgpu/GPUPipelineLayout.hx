@@ -2,5 +2,5 @@ package wgpu;
 
 @:native("GPUPipelineLayout")
 extern class GPUPipelineLayout {
-	var label:Null<String>;
+	var label:String;
 }

@@ -6,9 +6,9 @@ typedef GPUCanvasConfiguration = {
 	@:optional
 	var usage:wgpu.GPUTextureUsageFlags;
 	@:optional
+	var viewFormats:Array<wgpu.GPUTextureFormat>;
+	@:optional
 	var colorSpace:wgpu.GPUPredefinedColorSpace;
 	@:optional
 	var compositingAlphaMode:wgpu.GPUCanvasCompositingAlphaMode;
-	@:optional
-	var size:wgpu.GPUExtent3D;
 }

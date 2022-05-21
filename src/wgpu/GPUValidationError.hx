@@ -1,7 +1,6 @@
 package wgpu;
 
 @:native("GPUValidationError")
-extern class GPUValidationError {
-	final message:String;
+extern class GPUValidationError extends wgpu.GPUError {
 	function new(message:String):Void;
 }

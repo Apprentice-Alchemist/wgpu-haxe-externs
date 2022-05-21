@@ -2,14 +2,14 @@ package wgpu;
 
 @:native("GPURenderBundleEncoder")
 extern class GPURenderBundleEncoder {
-	var label:Null<String>;
+	var label:String;
 	function finish(?descriptor:wgpu.GPURenderBundleDescriptor):wgpu.GPURenderBundle;
-	overload function setBindGroup(index:wgpu.GPUIndex32, bindGroup:wgpu.GPUBindGroup, ?dynamicOffsets:Array<wgpu.GPUBufferDynamicOffset>):Void;
-	overload function setBindGroup(index:wgpu.GPUIndex32, bindGroup:wgpu.GPUBindGroup, dynamicOffsetsData:js.lib.Uint32Array,
-		dynamicOffsetsDataStart:wgpu.GPUSize64, dynamicOffsetsDataLength:wgpu.GPUSize32):Void;
 	function pushDebugGroup(groupLabel:String):Void;
 	function popDebugGroup():Void;
 	function insertDebugMarker(markerLabel:String):Void;
+	overload function setBindGroup(index:wgpu.GPUIndex32, bindGroup:wgpu.GPUBindGroup, ?dynamicOffsets:Array<wgpu.GPUBufferDynamicOffset>):Void;
+	overload function setBindGroup(index:wgpu.GPUIndex32, bindGroup:wgpu.GPUBindGroup, dynamicOffsetsData:js.lib.Uint32Array,
+		dynamicOffsetsDataStart:wgpu.GPUSize64, dynamicOffsetsDataLength:wgpu.GPUSize32):Void;
 	function setPipeline(pipeline:wgpu.GPURenderPipeline):Void;
 	function setIndexBuffer(buffer:wgpu.GPUBuffer, indexFormat:wgpu.GPUIndexFormat, ?offset:wgpu.GPUSize64, ?size:wgpu.GPUSize64):Void;
 	function setVertexBuffer(slot:wgpu.GPUIndex32, buffer:wgpu.GPUBuffer, ?offset:wgpu.GPUSize64, ?size:wgpu.GPUSize64):Void;

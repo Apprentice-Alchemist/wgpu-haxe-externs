@@ -7,7 +7,7 @@ extern class GPUDevice extends js.html.EventTarget {
 	final queue:wgpu.GPUQueue;
 	final lost:js.lib.Promise<wgpu.GPUDeviceLostInfo>;
 	var onuncapturederror:haxe.Constraints.Function;
-	var label:Null<String>;
+	var label:String;
 	function destroy():Void;
 	function createBuffer(descriptor:wgpu.GPUBufferDescriptor):wgpu.GPUBuffer;
 	function createTexture(descriptor:wgpu.GPUTextureDescriptor):wgpu.GPUTexture;

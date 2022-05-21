@@ -13,7 +13,7 @@ typedef GPUSamplerDescriptor = {
 	@:optional
 	var minFilter:wgpu.GPUFilterMode;
 	@:optional
-	var mipmapFilter:wgpu.GPUFilterMode;
+	var mipmapFilter:wgpu.GPUMipmapFilterMode;
 	@:optional
 	var lodMinClamp:Float;
 	@:optional
